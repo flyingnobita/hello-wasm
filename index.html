@@ -8,9 +8,15 @@
 
 <body>
   <script type="module">
-    import init, { greet } from "./pkg/hello_wasm.js";
+    // import init, { greet } from "./pkg/hello_wasm.js";
+    import init, { initThreadPool, greet } from "./pkg/hello_wasm.js";
     init().then(() => {
       greet("WebAssembly");
+
+      // initThreadPool(navigator.hardwareConcurrency).then(() => {
+      // sum([1, 2]);
+      // })
+
     });
   </script>
 </body>

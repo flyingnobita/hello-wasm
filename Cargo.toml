@@ -12,3 +12,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2"
+rayon = "1.5"
+wasm-bindgen-rayon = "1.0"
